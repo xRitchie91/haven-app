@@ -1,8 +1,25 @@
 * {
   box-sizing: border-box;
 }
+
+header {
+  color: rgb(94, 200, 253);
+  list-style: none;
+}
+a {
+  text-decoration: none;
+  list-style: none;
+  font-weight: bold;
+}
+button {
+  background: transparent;
+  border: none !important;
+  font-size: 0;
+  width: 200px;
+  height: 200px;
+}
 body {
-  color: aqua;
+  color: rgb(94, 200, 253);
   min-height: 100vh;
   overflow: hidden;
   display: flex;
@@ -10,8 +27,7 @@ body {
   align-items: center;
   margin: 0;
 }
-
-.container {
+.breathe-container {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -21,9 +37,11 @@ body {
   position: relative;
   transform: scale(1);
 }
+/* .container {
+} */
 
 .gradient-circle {
-  background-color: aqua;
+  background-color: rgb(94, 200, 253);
   height: 320px;
   width: 320px;
   top: -10px;
@@ -62,11 +80,11 @@ body {
   display: block;
 }
 
-.container.grow {
+.breathe-container.grow {
   animation: grow 3s linear forwards;
 }
 
-.container.shrink {
+.breathe-container.shrink {
   animation: shrink 3s linear forwards;
 }
 

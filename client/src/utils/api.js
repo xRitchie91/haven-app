@@ -26,3 +26,15 @@ export const loginUser = (userData) => {
         body: JSON.stringify(userData),
     });
 };
+
+export const deleteUser = (userData) => {
+    return fetch(`/api/users/${userData.id}`, {
+        method: 'DELETE',
+        headers: {
+            headers: {
+                'Content-Type': 'application/json',
+            },
+            body: JSON.stringify(userData),
+        },
+    });
+};
